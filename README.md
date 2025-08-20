@@ -172,7 +172,7 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 PS C:\Users\user\Desktop\git-exercises> git add .
-PS C:\Users\user\Desktop\git-exercises> git commit -m "full"
+PS C:\Users\user\Desktop\git-exercises> git commit -m "well done"
 On branch dev
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
@@ -181,4 +181,41 @@ Changes not staged for commit:
         modified:   Gym-Git-Exercise-Solutions (modified content)
 
 no changes added to commit (use "git add" and/or "git commit -a")
-PS C:\Users\user\Desktop\git-exercises>
+PS C:\Users\user\Desktop\git-exercises> cd Gym-Git-Exercise-Solutions
+PS C:\Users\user\Desktop\git-exercises\Gym-Git-Exercise-Solutions> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\user\Desktop\git-exercises\Gym-Git-Exercise-Solutions> git add .
+PS C:\Users\user\Desktop\git-exercises\Gym-Git-Exercise-Solutions> git commit -m "file is tracked"
+[main f39c72e] file is tracked
+ 1 file changed, 136 insertions(+), 1 deletion(-)
+PS C:\Users\user\Desktop\git-exercises\Gym-Git-Exercise-Solutions> cd..
+PS C:\Users\user\Desktop\git-exercises> git status
+On branch dev
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   Gym-Git-Exercise-Solutions (new commits)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\user\Desktop\git-exercises> git add .
+PS C:\Users\user\Desktop\git-exercises> git commit -m "the last file added"
+[dev 8f90e3d] the last file added
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\user\Desktop\git-exercises> git push origin dev
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 254 bytes | 254.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/thicien/Gym-Git-Exercise-Solutions.git
+   0767b95..8f90e3d  dev -> dev
