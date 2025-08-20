@@ -219,3 +219,34 @@ Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
 remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/thicien/Gym-Git-Exercise-Solutions.git
    0767b95..8f90e3d  dev -> dev
+
+   ## bundle 2
+
+  ### Exercise 1
+  ```bash
+  PS C:\Users\user\Desktop\git-exercises> git checkout -b ft/bundle-2
+Switched to a new branch 'ft/bundle-2'
+PS C:\Users\user\Desktop\git-exercises> git add .
+PS C:\Users\user\Desktop\git-exercises> git commit -m "add services"
+On branch ft/bundle-2
+PS C:\Users\user\Desktop\git-exercises> git branch
+  dev
+  ft/bundle-1
+* ft/bundle-2
+  main
+PS C:\Users\user\Desktop\git-exercises> cd C:\Users\user\Desktop\git-exercises
+PS C:\Users\user\Desktop\git-exercises> echo "<!DOCTYPE html><html><head><title>Services Page</title></head><body><h1>Our Services</h1><ul><li>Web Development</li><li>Mobile App Development</li><li>UI/UX Design</li></ul></body></html>" > services.html
+PS C:\Users\user\Desktop\git-exercises> git status
+On branch ft/bundle-2
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        services.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\user\Desktop\git-exercises> git add .
+PS C:\Users\user\Desktop\git-exercises> git commit -m "now file is added"
+[ft/bundle-2 32694b4] now file is added
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 services.html
+PS C:\Users\user\Desktop\git-exercises>
+```
